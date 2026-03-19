@@ -69,8 +69,8 @@ export default function Contact() {
 
           <div className="rounded-xl border border-[var(--border-color)] bg-[var(--bg-card)] p-5 text-sm text-[var(--text-secondary)] font-mono">
             <p className="text-sky-400/70 mb-3">contact.info</p>
-            <p>• Email: manthan10041004@gmail.com</p>
-            <p>• Location: Mohali, India</p>
+            <p>• Email: dpkjangra.011@gmail.com</p>
+            <p>• Location: Gurugram , Haryana </p>
             <p>• Availability: Open to opportunities</p>
           </div>
         </div>
@@ -130,11 +130,10 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={loading}
-                className={`w-full py-4 rounded-xl font-semibold transition ${
-                  loading
+                className={`w-full py-4 rounded-xl font-semibold transition ${loading
                     ? "bg-white/20 text-slate-400 cursor-not-allowed"
                     : "bg-gradient-to-r from-sky-400 to-cyan-300 text-black hover:opacity-90"
-                }`}
+                  }`}
               >
                 {loading ? "Sending..." : "Send message"}
               </button>

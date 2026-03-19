@@ -15,8 +15,8 @@ export default function Hero() {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-sky-400 to-cyan-300 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
               <img
-                src="/Manthan.jpg"
-                alt="Manthan Sharma"
+                src="/about-photo.png"
+                alt="Deepak Jangra"
                 className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover object-center border-4 border-slate-900 scale-110"
               />
             </div>
@@ -30,21 +30,20 @@ export default function Hero() {
             className="flex-1 text-left"
           >
             <h1 className="text-5xl md:text-6xl font-semibold tracking-tight mb-4 text-[var(--text-primary)]">
-              MANTHAN SHARMA
+              DEEPAK JANGRA
             </h1>
 
             <p className="uppercase tracking-[0.28em] text-[11px] text-[var(--accent)] mb-6">
-              Full-Stack & GenAI Systems Engineer
+              Full Stack Developer
             </p>
 
             <p className="text-lg text-[var(--text-secondary)] leading-relaxed mb-8">
-              I build <span className="text-[var(--text-primary)] font-medium">production-ready systems</span> — from
-              GenAI pipelines to real-time applications.
+              I am pursuing a degree <span className="text-[var(--text-primary)] font-medium">Bachelor of engineering in Computer science and engineering</span> at Chandigarh University.
             </p>
 
             <div className="flex gap-4 mb-8">
               <a
-                href="/Manthan_Sharma_Resume.pdf"
+                href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-xl bg-gradient-to-r from-sky-400 to-cyan-300 text-black font-semibold shadow-lg hover:opacity-90 transition"
@@ -53,8 +52,8 @@ export default function Hero() {
               </a>
 
               <a
-                href="/Manthan_Sharma_Resume.pdf"
-                download="Manthan_Sharma_Resume.pdf"
+                href="/resume.pdf"
+                download="Deepak_Jangra_Resume.pdf"
                 className="px-6 py-3 rounded-xl border border-[var(--border-color)] text-[var(--text-secondary)] hover:border-sky-400 hover:text-[var(--text-primary)] transition"
               >
                 Download
@@ -63,10 +62,10 @@ export default function Hero() {
 
             <div className="grid grid-cols-2 gap-4">
               {[
-                ["RAG Systems", "Vector DBs · Retrieval"],
-                ["Real-Time Apps", "Live GPS · Dashboards"],
-                ["Production GenAI", "LLM Workflows"],
-                ["System Design", "APIs · Scalability"],
+                ["Web Development", "HTML · CSS · React"],
+                ["Backend", "Node.js · Java"],
+                ["CI/CD Pipeline", "Jenkins · Git"],
+                ["Databases", "Firebase · MySQL"],
               ].map(([title, desc]) => (
                 <div
                   key={title}

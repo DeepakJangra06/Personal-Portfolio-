@@ -34,7 +34,7 @@ export default function About() {
                     Chandigarh University
                   </p>
                   <p className="text-[var(--text-muted)] text-xs mt-1">
-                    CGPA: 8.95
+                    CGPA: 7.12
                   </p>
                 </div>
               </div>
@@ -43,25 +43,25 @@ export default function About() {
                 <span className="mt-2 w-4 h-4 rounded-full bg-[var(--text-muted)] shrink-0" />
                 <div className="w-full rounded-xl border border-[var(--border-color)] bg-[var(--bg-card)] backdrop-blur p-6">
                   <p className="text-[var(--text-primary)] font-medium">
-                    Class XII — 93.8%
+                  Class XII - 81%
                   </p>
                   <p className="text-[var(--text-secondary)] text-sm mt-1">
-                    Springdales Public School, Sangrur
+                    HD SR SEC SCHOOL - JHAJJAR
                   </p>
                 </div>
               </div>
 
-              <div className="relative flex items-start gap-6">
+              {/* <div className="relative flex items-start gap-6">
                 <span className="mt-2 w-4 h-4 rounded-full bg-[var(--text-muted)] shrink-0" />
                 <div className="w-full rounded-xl border border-[var(--border-color)] bg-[var(--bg-card)] backdrop-blur p-6">
                   <p className="text-[var(--text-primary)] font-medium">
-                    Class X — 97.4%
+                    Core Programming
                   </p>
                   <p className="text-[var(--text-secondary)] text-sm mt-1">
-                    La Foundation School, Sangrur
+                    
                   </p>
                 </div>
-              </div>
+              </div> */}
 
             </div>
           </div>
@@ -74,18 +74,14 @@ export default function About() {
           </p>
 
           <h2 className="text-5xl md:text-6xl font-semibold leading-[1.1] mb-10 max-w-xl text-[var(--text-primary)]">
-            Building systems with
-            <span className="text-sky-400"> clarity & intent</span>.
+            Full Stack
+            <span className="text-sky-400"> Developer!</span>
           </h2>
 
           <p className="text-lg text-[var(--text-secondary)] leading-relaxed max-w-xl">
-            I’m a Computer Science Engineering student focused on full-stack
-            development, GenAI-powered applications, and problem solving through
-            Data Structures and Algorithms.
+            As a BE- CSE student with knowledge of CSS, HTML, JavaScript, and Java is proficient in both web development and core programming.
             <br /><br />
-            I enjoy working close to real-world constraints — designing clean
-            architectures, writing maintainable code, and building systems that
-            scale beyond demos and assignments.
+            I can create well-structured and styled web pages, add interactive elements using JavaScript, and develop efficient algorithms in Java.
           </p>
         </div>
 

@@ -33,33 +33,23 @@ export default function Skills() {
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <SkillCard
             title="Core Engineering"
-            skills={["C", "C++", "Java", "JavaScript", "TypeScript"]}
+            skills={["Java", "JavaScript"]}
             delay={0}
           />
           <SkillCard
             title="Frontend"
-            skills={["React", "Tailwind CSS", "HTML", "CSS"]}
+            skills={["React", "HTML", "CSS"]}
             delay={0.1}
           />
           <SkillCard
-            title="Backend"
-            skills={["Node.js", "Express.js", "REST APIs"]}
+            title="Databases & Cloud"
+            skills={["Firebase", "MongoDB", "MySQL"]}
             delay={0.2}
           />
           <SkillCard
-            title="Databases"
-            skills={["MongoDB", "MySQL", "PostgreSQL", "Qdrant"]}
-            delay={0.3}
-          />
-          <SkillCard
-            title="AI & GenAI"
-            skills={["Generative AI", "RAG", "LangChain", "LangGraph", "Gemini API"]}
-            delay={0.4}
-          />
-          <SkillCard
             title="Tooling"
-            skills={["Git", "GitHub", "Docker", "Postman", "VS Code"]}
-            delay={0.5}
+            skills={["Git", "Jenkins", "VS Code"]}
+            delay={0.3}
           />
         </div>
       </motion.div>

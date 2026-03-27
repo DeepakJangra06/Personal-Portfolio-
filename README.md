@@ -6,7 +6,7 @@ This portfolio highlights real-world engineering projects with clean UI, smooth 
 
 ## 🌐 Live Demo
 
-🔗 Portfolio Website: (https://personal-portfolio-5wr1vhjch-deepakjangra06s-projects.vercel.app) (Local Development)
+🔗 Portfolio Website: (https://personal-portfolio-deepakjangra06s-projects.vercel.app) (Local Development)
 
 ---
 

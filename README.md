@@ -6,7 +6,7 @@ This portfolio highlights real-world engineering projects with clean UI, smooth 
 
 ## 🌐 Live Demo
 
-🔗 Portfolio Website: [http://localhost:5173](http://localhost:5173) (Local Development)
+🔗 Portfolio Website: (https://personal-portfolio-5wr1vhjch-deepakjangra06s-projects.vercel.app) (Local Development)
 
 ---
 
@@ -103,7 +103,6 @@ React-Portfolio/
 ## 📬 Contact Details
 
 - **Email**: dpkjangra.011@gmail.com
-- **Phone**: 7027216598
 - **GitHub**: [DeepakJangra06](https://github.com/DeepakJangra06)
 - **LinkedIn**: [Deepak Jangra](https://www.linkedin.com/in/deepak-jangra-d06)
 

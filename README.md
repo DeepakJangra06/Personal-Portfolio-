@@ -121,6 +121,25 @@ The app will be available at `http://localhost:5173` (or the next available port
 
 ---
 
+## 🚀 Deployment (Vercel)
+
+This project is optimized for deployment on **Vercel**.
+
+### Steps:
+1.  **Import Repository**: Push your code to GitHub and import it into Vercel.
+2.  **Project Settings**:
+    - **Framework Preset**: Vite
+    - **Root Directory**: `React-Portfolio`
+3.  **Environment Variables**:
+    - Add `VITE_BACKEND_URL`: The URL of your hosted backend (e.g., `https://your-backend.render.com`).
+    - *If you are hosting the backend separately, make sure its CORS policy allows your Vercel URL.*
+
+### Features Enabled by `vercel.json`:
+- **SPA Routing**: Automatic rewrites for React Router.
+- **Cache Optimization**: Static assets are served with long-term caching headers.
+
+---
+
 ## 📄 License
 
 This project is for personal portfolio usage and reference.

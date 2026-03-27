@@ -2,14 +2,13 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section id="about" className="relative py-40">
-
+    <section id="about" className="section-container relative">
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="relative max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-28 items-start"
+        transition={{ duration: 0.8 }}
+        className="grid lg:grid-cols-2 gap-28 items-start"
       >
 
         {/* LEFT — EDUCATION TIMELINE */}

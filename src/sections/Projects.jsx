@@ -20,9 +20,8 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" className="relative py-40">
-
-      <div className="relative max-w-7xl mx-auto px-6">
+    <section id="projects" className="section-container relative">
+      <div className="relative">
 
         {/* HEADER */}
         <div className="max-w-3xl mx-auto text-center mb-32">

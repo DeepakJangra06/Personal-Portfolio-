@@ -7,4 +7,12 @@ export default defineConfig({
   plugins: [
     react(), 
     tailwindcss()],
+  server: {
+    proxy: {
+      "/send-email": {
+        target: "http://localhost:10000",
+        changeOrigin: true,
+      },
+    },
+  },
 })

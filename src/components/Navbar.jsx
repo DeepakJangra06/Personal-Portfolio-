@@ -41,7 +41,7 @@ export default function Navbar() {
             }}
             className="text-lg font-semibold tracking-wider text-[var(--text-primary)]"
           >
-            MS
+            DJ
           </a>
 
           {/* LINKS */}

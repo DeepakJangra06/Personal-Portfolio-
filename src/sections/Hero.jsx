@@ -8,16 +8,17 @@ export default function Hero() {
           {/* LEFT - PHOTO */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
-            animate={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="flex-shrink-0"
           >
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-sky-400 to-cyan-300 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
               <img
-                src="/about-photo.png"
+                src="/src/assets/projects/IMG_7463.png.png"
                 alt="Deepak Jangra"
-                className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover object-center border-4 border-slate-900 scale-110"
+                className="relative w-74 h-74 md:w-90 md:h-90 rounded-full object-cover object-top border-4 border-slate-900 scale-110"
               />
             </div>
           </motion.div>
@@ -43,7 +44,7 @@ export default function Hero() {
 
             <div className="flex gap-4 mb-8">
               <a
-                href="/resume.pdf"
+                href="/src/assets/projects/Deepak_Jangra_Resume-2.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-xl bg-gradient-to-r from-sky-400 to-cyan-300 text-black font-semibold shadow-lg hover:opacity-90 transition"
@@ -52,11 +53,23 @@ export default function Hero() {
               </a>
 
               <a
-                href="/resume.pdf"
+                href="/src/assets/projects/Deepak_Jangra_Resume-2.pdf"
                 download="Deepak_Jangra_Resume.pdf"
                 className="px-6 py-3 rounded-xl border border-[var(--border-color)] text-[var(--text-secondary)] hover:border-sky-400 hover:text-[var(--text-primary)] transition"
               >
                 Download
+              </a>
+
+              <a
+                href="https://linkedin.com/in/deepakjangra-d06"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 rounded-xl border border-[var(--border-color)] text-[var(--text-secondary)] hover:border-sky-400 hover:text-[var(--text-primary)] transition flex items-center gap-2"
+              >
+                <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+                LinkedIn
               </a>
             </div>
 

@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
+const backendBaseUrl = (import.meta.env.VITE_BACKEND_URL || "").trim().replace(/\/$/, "");
+const sendEmailEndpoint = backendBaseUrl ? `${backendBaseUrl}/send-email` : "/send-email";
+
 export default function Contact() {
   const [form, setForm] = useState({
     name: "",
@@ -24,14 +27,29 @@ export default function Contact() {
     setSuccess(false);
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/send-email`, {
+      const res = await fetch(sendEmailEndpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
+      const raw = await res.text();
+      let data = null;
 
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.message || "Something went wrong");
+      if (raw) {
+        try {
+          data = JSON.parse(raw);
+        } catch {
+          data = null;
+        }
+      }
+
+      if (!res.ok) {
+        const backendMessage =
+          data?.message ||
+          (raw && !raw.trim().startsWith("<") ? raw : "") ||
+          "Unable to send message right now. Please try again later.";
+        throw new Error(backendMessage);
+      }
 
       setSuccess(true);
       setForm({ name: "", email: "", subject: "", message: "" });
@@ -43,13 +61,13 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative pt-40 pb-24">
+    <section id="contact" className="section-container relative">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="relative max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-24 items-start"
+        transition={{ duration: 0.8 }}
+        className="grid lg:grid-cols-2 gap-24 items-start"
       >
         {/* LEFT */}
         <div className="max-w-xl">

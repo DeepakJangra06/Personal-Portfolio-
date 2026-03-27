@@ -3,8 +3,11 @@ import cors from "cors";
 import dotenv from "dotenv";
 import rateLimit from "express-rate-limit";
 import { Resend } from "resend";
+import { fileURLToPath } from "url";
+import { dirname, resolve } from "path";
 
-dotenv.config();
+const __dirname = dirname(fileURLToPath(import.meta.url));
+dotenv.config({ path: resolve(__dirname, ".env") });
 
 const app = express();
 
@@ -14,7 +17,7 @@ app.set("trust proxy", 1);
 app.use(cors());
 app.use(express.json());
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 const emailLimiter = rateLimit({
   windowMs: 60 * 1000,
@@ -38,6 +41,13 @@ app.post("/send-email", emailLimiter, async (req, res) => {
     return res.status(400).json({
       success: false,
       message: "Name, email, and message are required.",
+    });
+  }
+
+  if (!resend || !process.env.RECEIVER_EMAIL) {
+    return res.status(500).json({
+      success: false,
+      message: "Email service is not configured. Please set RESEND_API_KEY and RECEIVER_EMAIL.",
     });
   }
 

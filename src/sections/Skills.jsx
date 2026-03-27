@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative py-40">
+    <section id="skills" className="section-container relative">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-[1fr_1.4fr] gap-24 items-start"
+        transition={{ duration: 0.8 }}
+        className="grid lg:grid-cols-[1fr_1.4fr] gap-24 items-start"
       >
         {/* LEFT — TEXT */}
         <div>

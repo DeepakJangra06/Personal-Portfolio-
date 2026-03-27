@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import profileImg from "../assets/projects/IMG_7463.png.png";
+import resumePdf from "../assets/projects/Deepak_Jangra_Resume-2.pdf";
 
 export default function Hero() {
   return (
@@ -16,7 +18,7 @@ export default function Hero() {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-sky-400 to-cyan-300 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
               <img
-                src="/src/assets/projects/IMG_7463.png.png"
+                src={profileImg}
                 alt="Deepak Jangra"
                 className="relative w-74 h-74 md:w-90 md:h-90 rounded-full object-cover object-top border-4 border-slate-900 scale-110"
               />
@@ -44,7 +46,7 @@ export default function Hero() {
 
             <div className="flex gap-4 mb-8">
               <a
-                href="/src/assets/projects/Deepak_Jangra_Resume-2.pdf"
+                href={resumePdf}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-xl bg-gradient-to-r from-sky-400 to-cyan-300 text-black font-semibold shadow-lg hover:opacity-90 transition"
@@ -53,7 +55,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="/src/assets/projects/Deepak_Jangra_Resume-2.pdf"
+                href={resumePdf}
                 download="Deepak_Jangra_Resume.pdf"
                 className="px-6 py-3 rounded-xl border border-[var(--border-color)] text-[var(--text-secondary)] hover:border-sky-400 hover:text-[var(--text-primary)] transition"
               >

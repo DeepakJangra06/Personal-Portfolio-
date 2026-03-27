@@ -81,14 +81,22 @@ export default function Hero() {
                 ["Backend", "Node.js · Java"],
                 ["CI/CD Pipeline", "Jenkins · Git"],
                 ["Databases", "Firebase · MySQL"],
-              ].map(([title, desc]) => (
-                <div
+              ].map(([title, desc], index) => (
+                <motion.div
                   key={title}
+                  animate={{
+                    y: [0, -8, 0],
+                  }}
+                  transition={{
+                    duration: 4 + index,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
                   className="rounded-xl border border-[var(--border-color)] bg-[var(--bg-card)] backdrop-blur p-3 hover:border-sky-400/60 transition"
                 >
                   <p className="text-sm font-semibold text-[var(--text-primary)]">{title}</p>
                   <p className="text-xs text-[var(--text-muted)] mt-1">{desc}</p>
-                </div>
+                </motion.div>
               ))}
             </div>
           </motion.div>

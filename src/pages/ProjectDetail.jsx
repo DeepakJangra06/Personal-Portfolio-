@@ -82,7 +82,26 @@ export default function ProjectDetail() {
             Technologies Used
           </h2>
           <div className="rounded-xl border border-[var(--border-color)] bg-[var(--bg-card)] backdrop-blur p-6 text-center">
-            <p className="text-sm text-sky-400">{project.tech}</p>
+            <div className="flex flex-wrap justify-center gap-3">
+              {project.tech.split(/[·\+]/).map((tech, i) => (
+                <motion.span
+                  key={tech}
+                  animate={{
+                    y: [0, -4, 0],
+                  }}
+                  transition={{
+                    y: {
+                      duration: 2.5 + (i * 0.4),
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }
+                  }}
+                  className="px-4 py-2 rounded-full text-xs font-medium bg-sky-400/10 border border-sky-400/20 text-sky-400"
+                >
+                  {tech.trim()}
+                </motion.span>
+              ))}
+            </div>
           </div>
         </div>
 

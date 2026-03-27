@@ -35,21 +35,25 @@ export default function Skills() {
             title="Core Engineering"
             skills={["Java", "JavaScript"]}
             delay={0}
+            index={0}
           />
           <SkillCard
             title="Frontend"
             skills={["React", "HTML", "CSS"]}
             delay={0.1}
+            index={1}
           />
           <SkillCard
             title="Databases & Cloud"
             skills={["Firebase", "MongoDB", "MySQL"]}
             delay={0.2}
+            index={2}
           />
           <SkillCard
             title="Tooling"
             skills={["Git", "Jenkins", "VS Code"]}
             delay={0.3}
+            index={3}
           />
         </div>
       </motion.div>
@@ -57,13 +61,24 @@ export default function Skills() {
   );
 }
 
-function SkillCard({ title, skills, delay }) {
+function SkillCard({ title, skills, delay, index }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5, delay }}
+      animate={{
+        y: [0, -10, 0],
+      }}
+      transition={{
+        y: {
+          duration: 3 + (index % 3),
+          repeat: Infinity,
+          ease: "easeInOut"
+        },
+        duration: 0.5,
+        delay
+      }}
       whileHover={{ scale: 1.05, y: -5 }}
       className="h-full rounded-2xl border border-[var(--border-color)] bg-gradient-to-br from-[var(--bg-card)] to-[var(--bg-card)] backdrop-blur p-6 hover:border-sky-400/60 hover:shadow-lg hover:shadow-sky-400/10 transition-all duration-300"
     >
@@ -75,8 +90,19 @@ function SkillCard({ title, skills, delay }) {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.3, delay: delay + i * 0.05 }}
-            whileHover={{ scale: 1.1 }}
+            animate={{
+              y: [0, -3, 0],
+            }}
+            transition={{
+              y: {
+                duration: 2 + (i * 0.5),
+                repeat: Infinity,
+                ease: "easeInOut"
+              },
+              duration: 0.3,
+              delay: delay + i * 0.05
+            }}
+            whileHover={{ scale: 1.1, y: -2 }}
             className="px-3 py-1.5 rounded-full text-xs bg-[var(--bg-primary)] border border-[var(--border-color)] text-[var(--text-secondary)] hover:border-sky-400/60 hover:text-[var(--text-primary)] transition-all cursor-default"
           >
             {skill}

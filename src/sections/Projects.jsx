@@ -79,9 +79,26 @@ export default function Projects() {
                   {project.overview}
                 </p>
 
-                <p className="text-sm text-sky-400 mb-12">
-                  {project.tech}
-                </p>
+                <div className="flex flex-wrap gap-2 mb-12">
+                  {project.tech.split(/[·\+]/).map((tech, i) => (
+                    <motion.span
+                      key={tech}
+                      animate={{
+                        y: [0, -3, 0],
+                      }}
+                      transition={{
+                        y: {
+                          duration: 2 + (i * 0.5),
+                          repeat: Infinity,
+                          ease: "easeInOut"
+                        }
+                      }}
+                      className="px-3 py-1 rounded-full text-[10px] uppercase tracking-wider bg-sky-400/10 border border-sky-400/20 text-sky-400"
+                    >
+                      {tech.trim()}
+                    </motion.span>
+                  ))}
+                </div>
 
                 {/* BUTTONS */}
                 <div className="flex flex-wrap gap-4">

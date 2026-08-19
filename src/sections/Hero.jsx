@@ -20,7 +20,7 @@ export default function Hero() {
               <img
                 src={profileImg}
 <<<<<<< HEAD
-                alt="Deepak Jangra Nishal"
+                alt="Deepak Jangra"
 =======
                 alt="Deepak Jangra"
 >>>>>>> fd9fd3ad780d6aa35eacddce7b3341dac1c51b45
@@ -38,11 +38,11 @@ export default function Hero() {
           >
             <h1 className="text-5xl md:text-6xl font-semibold tracking-tight mb-4 text-[var(--text-primary)]">
 <<<<<<< HEAD
-              DEEPAK JANGRA NISHAL
+              DEEPAK JANGRA
 =======
               DEEPAK JANGRA
 >>>>>>> fd9fd3ad780d6aa35eacddce7b3341dac1c51b45
-            </h1>
+            </h1 >
 
             <p className="uppercase tracking-[0.28em] text-[11px] text-[var(--accent)] mb-6">
               Full Stack Developer
@@ -67,7 +67,7 @@ export default function Hero() {
 <<<<<<< HEAD
                 download="Deepak_23BCS13322.pdf"
 =======
-                download="Deepak_Jangra_Resume.pdf"
+                download="Deepak_23BCS13322.pdf"
 >>>>>>> fd9fd3ad780d6aa35eacddce7b3341dac1c51b45
                 className="px-6 py-3 rounded-xl border border-[var(--border-color)] text-[var(--text-secondary)] hover:border-sky-400 hover:text-[var(--text-primary)] transition"
               >
@@ -111,9 +111,9 @@ export default function Hero() {
                 </motion.div>
               ))}
             </div>
-          </motion.div>
-        </div>
-      </div>
-    </section>
+          </motion.div >
+        </div >
+      </div >
+    </section >
   );
 }

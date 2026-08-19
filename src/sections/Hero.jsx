@@ -19,7 +19,11 @@ export default function Hero() {
               <div className="absolute -inset-1 bg-gradient-to-r from-sky-400 to-cyan-300 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
               <img
                 src={profileImg}
+<<<<<<< HEAD
                 alt="Deepak Jangra Nishal"
+=======
+                alt="Deepak Jangra"
+>>>>>>> fd9fd3ad780d6aa35eacddce7b3341dac1c51b45
                 className="relative w-74 h-74 md:w-90 md:h-90 rounded-full object-cover object-top border-4 border-slate-900 scale-110"
               />
             </div>
@@ -33,7 +37,11 @@ export default function Hero() {
             className="flex-1 text-left"
           >
             <h1 className="text-5xl md:text-6xl font-semibold tracking-tight mb-4 text-[var(--text-primary)]">
+<<<<<<< HEAD
               DEEPAK JANGRA NISHAL
+=======
+              DEEPAK JANGRA
+>>>>>>> fd9fd3ad780d6aa35eacddce7b3341dac1c51b45
             </h1>
 
             <p className="uppercase tracking-[0.28em] text-[11px] text-[var(--accent)] mb-6">
@@ -56,7 +64,11 @@ export default function Hero() {
 
               <a
                 href={resumePdf}
+<<<<<<< HEAD
                 download="Deepak_23BCS13322.pdf"
+=======
+                download="Deepak_Jangra_Resume.pdf"
+>>>>>>> fd9fd3ad780d6aa35eacddce7b3341dac1c51b45
                 className="px-6 py-3 rounded-xl border border-[var(--border-color)] text-[var(--text-secondary)] hover:border-sky-400 hover:text-[var(--text-primary)] transition"
               >
                 Download

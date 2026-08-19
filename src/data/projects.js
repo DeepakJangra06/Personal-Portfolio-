@@ -69,13 +69,20 @@ export const projects = [
   },
 
   {
+<<<<<<< HEAD
     slug: "taskflow",
     title: "TaskFlow",
     subtitle: "Cloud-Native Task Management System",
+=======
+    slug: "face-recognition-system",
+    title: "Face Recognition System",
+    subtitle: "Real-time Machine Learning System",
+>>>>>>> fd9fd3ad780d6aa35eacddce7b3341dac1c51b45
     image: reforge,
     github: "https://github.com/DeepakJangra06",
 
     overview:
+<<<<<<< HEAD
       "TaskFlow is a high-performance, full-stack task management application designed for modern cloud environments. It demonstrates a complete 'Cloud-Native' lifecycle—from containerized local development to automated CI/CD and Kubernetes orchestration.",
 
     problem: [
@@ -99,5 +106,27 @@ export const projects = [
     ],
 
     tech: "React · Node.js · Docker · Kubernetes",
+=======
+      "In this project, we implement a face recognition system with real-time data tracking.",
+
+    problem: [
+      "Manual attendance systems are slow and prone to error"
+    ],
+
+    solution: [
+      "Implemented real-time facial tracking",
+    ],
+
+    architecture: [
+      "Python + OpenCV + cvzone frontend",
+      "Firebase database for data storage and management in real-time."
+    ],
+
+    impact: [
+      "Automated recognition."
+    ],
+
+    tech: "Python · OpenCV · Firebase",
+>>>>>>> fd9fd3ad780d6aa35eacddce7b3341dac1c51b45
   }
 ];

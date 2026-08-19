@@ -33,11 +33,7 @@ export default function About() {
                     Chandigarh University
                   </p>
                   <p className="text-[var(--text-muted)] text-xs mt-1">
-<<<<<<< HEAD
-                    CGPA: 7.50
-=======
                     CGPA: 7.12
->>>>>>> fd9fd3ad780d6aa35eacddce7b3341dac1c51b45
                   </p>
                 </div>
               </div>

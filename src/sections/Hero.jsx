@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import profileImg from "../assets/projects/IMG_7463.png";
-import resumePdf from "../assets/projects/Deepak_Jangra_Resume-2.pdf";
+import resumePdf from "../assets/projects/Deepak_23BCS13322.pdf";
 
 export default function Hero() {
   return (

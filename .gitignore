@@ -26,3 +26,6 @@ dist-ssr
 # Environemnt variables
 .env
 .env.*.local
+
+React-Portfolio/
+

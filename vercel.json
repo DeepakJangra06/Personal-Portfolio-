@@ -3,11 +3,15 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/(api|send-email)(.*)",
-      "destination": "http://localhost:10000/$1$2"
+      "source": "/send-email",
+      "destination": "/api/send-email"
     },
     {
-      "source": "/(.*)",
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "/((?!api/|send-email).*)",
       "destination": "/index.html"
     }
   ],
